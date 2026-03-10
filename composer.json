@@ -1,0 +1,38 @@
+{
+    "name": "psc-acme/connector-billing",
+    "description": "Package connector-billing for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\ConnectorBilling\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "symfony/validator": "^7.0",
+        "monolog/monolog": "^3.2.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.6",
+        "phpunit/phpunit": "^11.0",
+        "webforge/object-asserter": "^2.0.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
